@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markea Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="#nav">
+      <a class="nav__logo" href="/"><img src="images/Logo.png" alt="" /></a>
+
+      <ul class="nav__links">
+        <li class="link"><a href="#">Inicio</a></li>
+        <li class="link"><a href="#">Servicios</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+      </ul>
+      <!-- Botón para mostrar el formulario -->
+      <div id="mostrar" class="boton__contactar">
+        <a href="#nav">Contactar</a>
+      </div>
+    </nav>
+    <!-- Imágenes de fondo -->
+    <img class="circulo_hero" src="svg/background/Ellipse_hero.svg" />
+    <img class="rectangulo_hero" src="svg/background/Rectangle_hero.svg" />
+
+    <!-- Formulario -->
+    <div id="form">
+      <p>Envíanos tus datos y nos pondremos en contacto.</p>
+      <form id="formulario" method="post">
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" type="text" id="nombre" required />
+        <label for="apellido">Apellido:</label>
+        <input name="apellido" type="text" id="apellido" required />
+        <label for="email">E-mail:</label>
+        <input name="email" type="email" id="email" required />
+        <label for="mensaje">Ingresa tu mensaje</label>
+        <input name="mensaje" type="text" id="mensaje" required />
+        <button type="submit" id="enviar">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Sección hero -->
+    <section id="index" class="section__container hero__container">
+      <div class="hero__content">
+        <h2>Agencia de</h2>
+        <h1>Desarrollo web y</h1>
+        <h1>tiendas en línea</h1>
+        <div class="hero__info">
+          <p>
+            Creamos e implementamos
+            <span class="primary">nuevas ideas</span>
+            para
+          </p>
+          <p>llevar tu negocio al siguiente nivel</p>
+        </div>
+      </div>
+
+      <!-- Botón para mostrar el formulario -->
+      <div id="mostrar" class="boton__contactar p-2-3">
+        <a href="#nav">Agenda una reunión</a>
+      </div>
+    </section>
+
+    <!-- Sección de beneficios -->
+    <section class="cards__container">
+      <h1><span class="h1__highlight">Beneficios</span></h1>
+      <div class="cards__slide">
+        <div class="card_item_slide">
+          <img src="images/Presencia.jpg" alt="" />
+          <h3><span class="highlight">Presencia</span> online</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="card_item_slide">
+          <img src="images/Ventaja.jpg" alt="" />
+          <h3><span class="highlight">Ventaja</span> competitiva</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="card_item_slide">
+          <img src="images/Aumento.jpg" alt="" />
+          <h3><span class="highlight">Aumento</span> de ventas</h3>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="card_item_slide">
+          <img src="images/Crecimiento.jpg" alt="" />
+          <h3><span class="highlight">Crecimiento</span> empresarial</h3>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!-- Imágenes de fondo -->
+    <img class="l-goal" src="svg/background/left-goals.svg" />
+    <img class="r-goal" src="svg/background/right-goals.svg" />
+
+    <!-- Sección de logros -->
+    <section class="section__container-sm goals__container">
+      <h1>Lo que <span class="h1__highlight">lograremos</span></h1>
+      <div class="cards__grid">
+        <div class="card_item">
+          <p>
+            Diseño <span class="highlight">único</span> y adaptado a tus
+            necesidades empresariales
+          </p>
+          <div class="svg__container">
+            <img src="svg/comment_outline.svg" />
+          </div>
+        </div>
+        <div class="card_item">
+          <p>
+            <span class="highlight">Optimización</span> para motores de búsqueda
+          </p>
+          <div class="svg__container">
+            <img src="svg/search_outline.svg" />
+          </div>
+        </div>
+        <div class="card_item">
+          <p>
+            Integración de sistemas de
+            <span class="highlight">administración</span> de contenido
+          </p>
+          <div class="svg__container">
+            <img src="svg/audit_outline.svg" />
+          </div>
+        </div>
+        <div class="card_item">
+          <p>Rendimiento <span class="highlight">eficiente</span></p>
+          <div class="svg__container">
+            <img src="svg/line-chart_outline.svg" />
+          </div>
+        </div>
+        <div class="card_item">
+          <p>Vitrina <span class="highlight">digital</span></p>
+          <div class="svg__container">
+            <img src="svg/check-square_outline.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section class="section__container-sm proyectos__container">
+      <h1>
+        Un <span class="h1__highlight">proyecto</span> dice más que mil palabras
+      </h1>
+      <div class="proyectos__contenido">
+        <div class="proyectos__menu">
+          <div class="proyecto__item" data-video="videos/video_1.mp4">
+            <p>⁰¹ Páginas web</p>
+            <img src="svg/arrow-right-short.svg" alt="" />
+          </div>
+          <div class="proyecto__item" data-video="videos/video_2.mp4">
+            <p>⁰² Tiendas en línea</p>
+            <img src="svg/arrow-right-short.svg" alt="" />
+          </div>
+          <div class="proyecto__item" data-video="videos/video_3.mp4">
+            <p>⁰³ UX & UI</p>
+            <img src="svg/arrow-right-short.svg" alt="" />
+          </div>
+          <div class="proyecto__item" data-video="videos/video_4.mp4">
+            <p>⁰⁴ Landing pages</p>
+            <img src="svg/arrow-right-short.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="proyectos__reproductor">
+          <div class="video__container">
+            <video
+              class="main__video"
+              src="videos/video_1.mp4"
+              controls
+            ></video>
+          </div>
+          <div class="video__background"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Imagen de fondo -->
+    <img class="p-r" src="svg/background/P-R.svg" />
+
+    <!-- Sección de preguntas frecuentes -->
+    <section class="section__container-sm faq__container">
+      <h1><span class="h1__highlight">Preguntas</span> frecuentes</h1>
+      <div class="preguntas__container">
+        <div class="pregunta__item">
+          <p>⁰¹ ¿Lorem ipsum dolor sit, consectetur adipiscing elit?</p>
+          <img src="svg/chevron-down.svg" class="chevron" />
+          <div class="respuesta">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="pregunta__item">
+          <p>⁰² ¿Ut enim ad minim veniam, quis nostrud exercitation?</p>
+          <img src="svg/chevron-down.svg" class="chevron" />
+          <div class="respuesta">
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="pregunta__item">
+          <p>⁰³ ¿Duis aute irure dolor in reprehenderit in voluptate?</p>
+          <img src="svg/chevron-down.svg" class="chevron" />
+          <div class="respuesta">
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <div class="pregunta__item">
+          <p>
+            ⁰⁴ ¿Excepteur sint occaecat cupidatat non proident, sunt in culpa?
+          </p>
+          <img src="svg/chevron-down.svg" class="chevron" />
+          <div class="respuesta">
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Imagen de fondo -->
+    <img class="f-l" src="svg/background/FAQ-l.svg" />
+
+    <!-- Sección de contacto -->
+    <section class="section__container contact__container">
+      <img class="c-l" src="svg/background/C-L.svg" />
+      <img class="c-r" src="svg/background/C-R.svg" />
+      <div class="texto__container">
+        <h1>Permitenos ser tu nuevo</h1>
+        <h1 class="background_highlight">socio estrategico</h1>
+      </div>
+      <!-- Botón para mostrar el formulario -->
+      <div id="cont" class="boton__contactar p-2-3">
+        <a href="#nav">Contactar a un asesor</a>
+      </div>
+    </section>
+
+     <!-- Pie de página -->
+    <footer>
+      <section class="footer__container">
+        <div class="logo__footer"><img src="images/Logo.png" alt="" /></div>
+        <div class="tags__grid">
+          <div class="tag__item"><a href="">Desarrollo web</a></div>
+          <div class="tag__item"><a href="">Terminos y condiciones</a></div>
+          <div class="tag__item"><a href="">Tiendas en línea</a></div>
+          <div class="tag__item"><a href="">Politicas de privacidad</a></div>
+          <div class="tag__item"><a href="">SEO y SEM</a></div>
+          <div class="tag__item"><a href="">Politica de cookies</a></div>
+          <div class="tag__item">
+            <a href="">Diseño gráfico y fotografía</a>
+          </div>
+          <div class="tag__item"><a href="">Faqs</a></div>
+        </div>
+
+        <div class="newsletter__container">
+          <p>Suscríbete al newsletter</p>
+          <input type="email" placeholder="Ingresa tu correo electrónico" />
+          <div class="boton__contactar">
+            <a href="#">Suscribirme</a>
+          </div>
+        </div>
+      </section>
+      <p>Copyright © 2024 All rights reserved</p>
+    </footer>
+
+    <!-- Overlay para el formulario -->
+    <div id="overlay"></div>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="form.js"></script>
+
+  </body>
+</html>
